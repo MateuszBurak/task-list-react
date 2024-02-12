@@ -2,7 +2,7 @@
 
 ## Task List in React - February 12th, 2024
 
-[Link to the demo]()
+[Link to the demo](https://mateuszburak.github.io/task-list-react/)
 
 This application helps you follow your daily tasks. It can:
 1. Add new tasks to your task list
