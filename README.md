@@ -13,7 +13,17 @@ This application helps you follow your daily tasks. It can:
 
 It follows BEM convention and uses ES6+ features.
 
+![A picture of the website](/src/images/taskListReactImage.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Technologies used
+
+- HTML 5
+- CSS 3
+- JavaScript
+- React
+- Create React App
 
 ## Available Scripts
 
