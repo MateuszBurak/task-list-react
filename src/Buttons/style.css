@@ -1,0 +1,37 @@
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .buttons {
+        flex-grow: 1;
+        flex-direction: column;
+    }
+}
+
+.buttons__button {
+    border: none;
+    background-color: transparent;
+    transition: 0.4s;
+    margin-left: 20px;
+    color: #007482;
+    padding-right: 10px;
+}
+
+.buttons__button:hover {
+    color: #008fa0;
+}
+
+.buttons__button:disabled {
+    color: #ccc;
+}
+
+@media (max-width: 767px) {
+    .buttons__button {
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
