@@ -4,7 +4,9 @@
 
 [Link to the demo](https://mateuszburak.github.io/task-list-react/)
 
-This application helps you follow your daily tasks. It can:
+This application helps you follow your daily tasks. **Currently, it is only a visual representation of the final website.** 
+
+It will be able to:
 1. Add new tasks to your task list
 2. Check already added tasks as done
 3. Remove tasks if desired
