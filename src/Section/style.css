@@ -1,4 +1,4 @@
-.section__flex {
+.section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
