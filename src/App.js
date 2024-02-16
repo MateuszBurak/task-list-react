@@ -25,6 +25,13 @@ function App() {
     setTasks(tasks => tasks.map(task => id === task.id ? { ...task, done: !task.done } : task))
   }
 
+  const markAllAsDone = () => {
+    setTasks(tasks => tasks.map((task) => ({
+      ...task,
+      done: true,
+    })))
+  }
+
   return (
     <Container>
       <Title
@@ -39,7 +46,8 @@ function App() {
         sectionExtraContent={<Buttons
           tasks={tasks}
           hideDone={hideDone}
-          toggleHideDone={toggleHideDone} />}
+          toggleHideDone={toggleHideDone}
+          markAllAsDone={markAllAsDone} />}
         sectionBody={<Tasks
           tasks={tasks}
           hideDone={hideDone}
