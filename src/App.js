@@ -29,8 +29,19 @@ function App() {
     setTasks(tasks => tasks.map((task) => ({
       ...task,
       done: true,
-    })))
-  }
+    })));
+  };
+
+  const addNewTask = (content) => {
+    setTasks(tasks => [
+      ...tasks,
+      {
+        content,
+        done: false,
+        id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
+      }
+    ]);
+  };
 
   return (
     <Container>
@@ -39,7 +50,8 @@ function App() {
       />
       <Section
         title="Dodaj nowe zadanie"
-        sectionBody={<Form />}
+        sectionBody={<Form
+          addNewTask={addNewTask} />}
       />
       <Section
         title="Lista zadań"
